@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import SongSelector from '../components/SongSelector.js'
-import SongDetail from '../components/SongDetail.js'
+import SongList from '../components/SongList.js'
 
 class ChartContainer extends Component {
 
@@ -24,8 +23,8 @@ class ChartContainer extends Component {
   render(){
     return(
       <div>
-      <h2>UK TOP 20</h2>
-      <SongSelector songs={this.state.songs}/>
+      <h1>UK TOP 20</h1>
+      <SongList songs={this.state.songs}/>
       </div>
     )
   }
